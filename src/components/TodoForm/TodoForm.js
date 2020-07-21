@@ -55,8 +55,7 @@ class TodoForm extends Component {
     render() {
         return (
             <>
-            <Todo entries={this.state.items}
-             delete={this.deleteItem} />
+            <Todo entries={this.state.items} delete={this.deleteItem} />
             <div className="TodoForm">
                 <div className="header">
                 <form onSubmit={this.addItem}>
