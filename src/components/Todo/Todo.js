@@ -1,6 +1,9 @@
 // Todo.js
 import React, {Component} from 'react';
 import FlipMove from "react-flip-move";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrash } from '@fortawesome/fontawesome-free-solid'
+
 import './Todo.css';
 
 class todo extends Component { 
@@ -10,8 +13,11 @@ class todo extends Component {
         
     }
     createTasks(item) {
-        return <li onClick={() => this.delete(item.key)} 
-        key={item.key}>{item.text}</li>
+        return <li key={item.key}>{item.text} 
+          <button onClick={() => this.delete(item.key)} type="button">          
+            <FontAwesomeIcon icon={faTrash} />
+          </button> 
+          </li>
     }
     delete(key) {
         this.props.delete(key);

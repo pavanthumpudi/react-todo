@@ -27,3 +27,16 @@
 ul.theList {
     padding: 0;
 }
+
+li>button {
+    font-size: 16px;
+    float:right;
+    margin-right: 0px;
+    color: #000;
+    border-radius: 20px;
+    border:none;
+}
+li>button:hover {
+    background-color:rgba(255,255,255,.9);
+    cursor: pointer;
+}
