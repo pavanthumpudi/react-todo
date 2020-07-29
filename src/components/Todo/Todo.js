@@ -13,7 +13,8 @@ class todo extends Component {
         
     }
     createTasks(item) {
-        return <li key={item.key}>{item.text} 
+        return <li key={item.key}> 
+          {item.text} 
           <button onClick={() => this.delete(item.key)} type="button">          
             <FontAwesomeIcon icon={faTrash} />
           </button> 
