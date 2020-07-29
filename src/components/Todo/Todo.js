@@ -29,9 +29,17 @@ class todo extends Component {
    
       return (
         <ul className="theList">
-          <FlipMove duration={500} easing="ease-out">
-            {listItems}
-          </FlipMove>
+          <div className="annotation-file">
+              {
+                Object.keys(this.props.entries).length > 0 ?
+                <FlipMove duration={500} easing="ease-out">
+                  {listItems}
+                </FlipMove>
+                : 
+                <p className="text-white">List is empty, <br></br> <b className="text-white">Try adding new Task</b></p> 
+              }
+            </div>
+          
         </ul>
       );
     }

@@ -1,5 +1,8 @@
 // Todo.js
 import React, {Component} from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaperPlane } from '@fortawesome/fontawesome-free-solid'
+
 import './TodoForm.css';
 import Todo from '../Todo/Todo'
 
@@ -61,7 +64,9 @@ class TodoForm extends Component {
                 <form onSubmit={this.addItem}>
                     <input ref={(a) => this._inputElement = a}  placeholder="enter task">
                     </input>
-                    <button type="submit">add</button>
+                    <button type="submit">
+                    <FontAwesomeIcon icon={faPaperPlane} />
+                    </button>
                 </form>
                 </div>
             </div>

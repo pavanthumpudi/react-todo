@@ -27,9 +27,11 @@
 ul.theList {
     padding: 0;
 }
+
 li>button {
     display: none;
 }
+
 li:hover>button {
     display: block;
     font-size: 16px;
@@ -43,4 +45,8 @@ li:hover>button {
 li>button:hover {
     background-color:rgba(255,255,255,.9);
     cursor: pointer;
+}
+
+.text-white {
+    color: #fff;
 }
